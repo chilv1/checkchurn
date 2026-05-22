@@ -1,0 +1,23 @@
+# Cốt lõi — chạy mọi nền tảng
+faster-whisper>=1.2
+soundfile
+numpy
+pandas
+xlsxwriter
+openpyxl
+matplotlib
+scikit-learn
+huggingface_hub
+
+# Phân tích + dịch
+transformers>=4.40
+sentencepiece
+
+# Tách vai theo âm thanh (cần HuggingFace token cho pyannote)
+torch>=2.2
+torchaudio
+pyannote.audio>=4.0
+speechbrain>=1.0
+
+# CHỈ Apple Silicon (M1/M2/M3/M4) — bật ASR GPU. Bỏ qua trên nền khác.
+mlx-whisper; sys_platform == "darwin" and platform_machine == "arm64"
