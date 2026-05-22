@@ -1,0 +1,27 @@
+# === BÍ MẬT / SECRETS — KHÔNG BAO GIỜ commit ===
+.hf_token
+*.token
+.phone_map.local.json
+
+# === DỮ LIỆU KHÁCH HÀNG / PII — không đẩy lên GitHub ===
+# ghi âm cuộc gọi khách hàng
+audio_in/
+# transcript (SĐT + nội dung)
+stt_out/
+# transcript đã tách vai (SĐT + nội dung + dịch)
+stt_diar_out/
+# dashboard, báo cáo, CSV (chứa SĐT khách)
+output/
+# output phân tích cũ (PII)
+reports/
+
+# === FILE LỚN / TẢI VỀ / SINH RA — tái tạo được ===
+node_modules/
+models/
+__pycache__/
+*.pyc
+*.pyo
+
+# === HỆ THỐNG ===
+.DS_Store
+.claude/settings.local.json
